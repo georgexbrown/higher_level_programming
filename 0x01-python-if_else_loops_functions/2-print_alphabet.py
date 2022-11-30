@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for c in (chr(i) for i in range(97,123)):
-    print(f"{c}", end="")
+for i in 'abcdefghijklmnopqrstuvwxyz':
+    print(f"{i}", end="")
