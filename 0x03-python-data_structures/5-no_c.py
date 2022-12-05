@@ -3,9 +3,4 @@ def no_c(my_string):
     if not my_string:
         pass
     else:
-        replace = ''
-        for char in my_string:
-            if char == 'c' or char == 'C':
-                char == ''
-            replace += char
-        return replace
+        return ''.join([char if char not in 'cC' else '' for char in my_string])
