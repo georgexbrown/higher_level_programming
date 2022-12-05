@@ -6,6 +6,6 @@ def no_c(my_string):
         replace = ''
         for char in my_string:
             if char == 'c' or char == 'C':
-                char == ""
+                char == ''
             replace += char
         return replace
