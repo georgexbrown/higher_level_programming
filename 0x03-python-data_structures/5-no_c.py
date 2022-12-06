@@ -3,5 +3,5 @@ def no_c(my_string):
     if not my_string:
         pass
     else:
-        txt = ''.join([char if char not in 'cC' else '' for char in my_string])
-        return txt
+        table = {67:None, 99:None}
+        return my_string.translate(table)
