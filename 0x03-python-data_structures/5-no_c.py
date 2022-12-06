@@ -3,5 +3,8 @@ def no_c(my_string):
     if not my_string:
         pass
     else:
-        table = {67: None, 99: None}
-        return my_string.translate(table)
+        replace = ''
+        for char in my_string:
+            if char == 'c' or char == 'C':
+                replace += char
+                return replace
