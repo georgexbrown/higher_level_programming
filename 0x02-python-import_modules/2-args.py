@@ -6,6 +6,5 @@ if __name__ == "__main__":
     else:
         print("{} {}".format(len(sys.argv) - 1, "argument:"
               if len(sys.argv) == 2 else "arguments:"))
-        i = 1
         for i, element in enumerate(sys.argv[1:]):
             print("{:d}: {:s}".format(i+1, element))
