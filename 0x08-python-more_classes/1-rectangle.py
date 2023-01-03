@@ -6,7 +6,7 @@
 class Rectangle:
     """Represent a rectangle"""
 
-    def __init__(self, __width=0, __height=0):
+    def __init__(self, width=0, height=0):
         """Initializing this rectangle class
         Args:
             width: represents width of rectangle
@@ -15,8 +15,8 @@ class Rectangle:
             TypeError: if value is not integer
             valueError: if value is less than zero
         """
-        self.width = __width
-        self.height = __height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
