@@ -2,7 +2,7 @@
 
 """Imports the super class BaseGeometry"""
 
-Rectangle = __import__('7-base_geometry').BaseGeometry
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 """Defines a sub class"""
 
@@ -14,8 +14,8 @@ class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         """Validating and privatizing width and height
         Args:
-            width: width of object
-            height: height of object
+            width(int): width of object
+            height(int): height of object
         """
 
         self.integer_validator("width", width)
