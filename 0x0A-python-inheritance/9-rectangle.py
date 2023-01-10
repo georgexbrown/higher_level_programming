@@ -12,7 +12,7 @@ class Rectangle(BaseGeometry):
     """Module instantiation with width and height"""
 
     def __init__(self, width, height):
-        """validating and privatizing width and height
+        """Validating and privatizing width and height
         Args:
             width: width of object
             height: height of object
