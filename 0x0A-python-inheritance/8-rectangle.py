@@ -9,10 +9,10 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 class Rectangle(BaseGeometry):
 
-    """  """
+    """Module instantiation with width and height"""
 
     def __init__(self, width, height):
-        """  """
+        """validating and privatizing width and height"""
 
         self.integer_validator("width", width)
         self.__width = width
