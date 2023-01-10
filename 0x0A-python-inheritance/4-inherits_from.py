@@ -13,7 +13,6 @@ def inherits_from(obj, a_class):
         a_class: class to be compared with
     """
 
-    # if issubclass(type(obj), a_class) and type(obj) != a_class:
-    if type(obj) != a_class:
+    if issubclass(type(obj), a_class) and type(obj) != a_class:
         return True
     return False
