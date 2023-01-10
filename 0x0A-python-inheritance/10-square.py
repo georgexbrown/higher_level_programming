@@ -14,7 +14,7 @@ class Square(Rectangle):
 
     def __init__(self, size):
         """Validating and privatizing size
-        
+
         Args:
             size(int): both length and width of square
         """
