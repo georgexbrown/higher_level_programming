@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """
-Defines a function that determines is object is an instance of a class that inherited
+Defines a function that determines is object is an instance of
+    a class that inherited
 """
 
 
