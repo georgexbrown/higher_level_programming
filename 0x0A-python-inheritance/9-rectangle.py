@@ -18,9 +18,9 @@ class Rectangle(BaseGeometry):
             height(int): height of object
         """
 
-        super().integer_validator("width", width)
+        self.integer_validator("width", width)
         self.__width = width
-        super().integer_validator("height", height)
+        self.integer_validator("height", height)
         self.__height = height
 
     def area(self):
@@ -28,7 +28,7 @@ class Rectangle(BaseGeometry):
 
         return self.__width * self.__height
 
-    def str(self):
+    def __str__(self):
         """Returns rectangle description for printing"""
 
         return "[{}] {}/{}".format(
