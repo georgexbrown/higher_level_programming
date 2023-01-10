@@ -15,7 +15,7 @@ class Square(Rectangle):
     def __init__(self, size):
         """Validating and privatizing size
         Args:
-            size: both length and width of square
+            size(int): both length and width of square
         """
 
         self.integer_validator("size", size)
