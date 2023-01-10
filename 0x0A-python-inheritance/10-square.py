@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 """Importing super class Rectangle"""
+
 Rectangle = __import__(9-rectangle).Rectangle
 
 
@@ -8,6 +9,7 @@ Rectangle = __import__(9-rectangle).Rectangle
 
 
 class Square(Rectangle):
+
     """Module instantiation with size"""
 
     def __init__(self, size):
