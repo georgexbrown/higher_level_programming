@@ -20,7 +20,7 @@ class Student:
 
     """Defines a function that returns dictionary desc for JSON of obj"""
 
-    def class_to_json(self):
+    def to_json(self):
         """Returns dictionary decsription with simple data structure for
             JSON serialization of an object
         Args:
