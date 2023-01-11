@@ -14,10 +14,10 @@ def pascal_triangle(n):
 
     triangles = [[1]]
     while len(triangles) != n:
-        k = triangles[-1]
+        tri = triangles[-1]
         tmp = [1]
-        for i in range(len(k) - 1):
-            tmp.append(k[i] + k[i + 1])
+        for i in range(len(tri) - 1):
+            tmp.append(tri[i] + tri[i + 1])
         tmp.append(1)
         triangles.append(tmp)
-    return traingles
+    return triangles
