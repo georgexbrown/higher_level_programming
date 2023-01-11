@@ -10,5 +10,6 @@ def load_from_json_file(filename):
     Args:
         filename: JSON file to deserialize
     """
-    myObj = json.load(filename)
-    return myObj
+    with open(filename, mode='r', encoding="utf-8") as myFile:
+        myObj = json.load(myFile)
+        return myObj
