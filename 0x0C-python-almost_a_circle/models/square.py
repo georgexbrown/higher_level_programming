@@ -54,12 +54,11 @@ class Square(Rectangle):
                 if count == 0:
                     self.id = item
                 elif count == 1:
-                    self.__width = item
-                    self.__height = item
+                    self.size = item
                 elif count == 2:
-                    self.__x = item
+                    self.x = item
                 elif count == 3:
-                    self.__y = item
+                    self.y = item
                 count += 1
 
         elif kwargs:
@@ -67,9 +66,8 @@ class Square(Rectangle):
                 if key == "id":
                     self.id = value
                 elif key == "size":
-                    self.__width = value
-                    self.__height = value
+                    self.size = value
                 elif key == "x":
-                    self.__x = value
+                    self.x = value
                 elif key == "y":
-                    self.__y = value
+                    self.y = value
