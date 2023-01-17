@@ -2,7 +2,7 @@
 
 """Imports the super class Base"""
 
-Base = __import__('base').Base
+from models.base import Base
 
 """Defines a rectangle class that inherits from Base"""
 
@@ -10,6 +10,7 @@ Base = __import__('base').Base
 class Rectangle(Base):
 
     """Module Instantiation with attributes"""
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize the new Rectangle and set attributes
         Args:
