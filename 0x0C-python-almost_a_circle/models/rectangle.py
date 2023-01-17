@@ -107,25 +107,42 @@ class Rectangle(Base):
                                                 self.id, self.__x, self.__y,
                                                 self.__width, self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update the rectangle with new attributes
         Args:
-            1st argument should be the id attribute
-            2nd argument should be the width attribute
-            3rd argument should be the height attribute
-            4th argument should be the x attribute
-            5th argument should be the y attribute
+            *args (int)
+               - 1st argument should be the id attribute
+               - 2nd argument should be the width attribute
+               - 3rd argument should be the height attribute
+               - 4th argument should be the x attribute
+               - 5th argument should be the y attribute
+
+            **kwargs (dict) - key/value pair of attribute
         """
-        count = 0
-        for item in args:
-            if count == 0:
-                self.id = item
-            elif count == 1:
-                self.__width = item
-            elif count == 2:
-                self.__height = item
-            elif count == 3:
-                self.__x = item
-            elif count == 4:
-                self.__y = item
-            count += 1
+        if args:
+            count = 0
+            for item in args:
+                if count == 0:
+                    self.id = item
+                elif count == 1:
+                    self.__width = item
+                elif count == 2:
+                    self.__height = item
+                elif count == 3:
+                    self.__x = item
+                elif count == 4:
+                    self.__y = item
+                count += 1
+
+        elif kwargs:
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                elif key == "width":
+                    self.__width = value
+                elif key == "height":
+                    self.__height = value
+                elif key == "x":
+                    self.__x = value
+                elif key == "y":
+                    self.__y = value
