@@ -94,16 +94,18 @@ class Rectangle(Base):
 
     def display(self):
         """Print the rectangle shape using the '#' character"""
-        for x in range(self.__height):
-            for y in range(1, self.__width):
+        [print("") for y in range(self.__y)]
+        for length in range(self.__height):
+            [print(" ", end="") for x in range(self.__x)]
+            for breadth in range(1, self.__width):
                 print('#', end="")
             print('#')
 
     def __str__(self):
         """Return the str() representation of the rectangle"""
         return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
-                                               self.id, self.__x, self.__y,
-                                               self.__width, self.__height)
+                                                self.id, self.__x, self.__y,
+                                                self.__width, self.__height)
 
     def update(self, *args):
         """Update the rectangle with new attributes
