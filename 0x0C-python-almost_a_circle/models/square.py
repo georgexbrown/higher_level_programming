@@ -34,8 +34,8 @@ class Square(Rectangle):
     def __str__(self):
         """Return the str() representation of the square"""
         return "[{}] ({}) {}/{} - {}".format(self.__class__.__name__,
-                                             self.id, self.__x, self.__y,
-                                             self.__width)
+                                             self.id, self.x, self.y,
+                                             self.width)
 
     def update(self, *args, **kwargs):
         """Update the square with new attributes
