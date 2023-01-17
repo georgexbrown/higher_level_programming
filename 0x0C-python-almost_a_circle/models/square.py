@@ -24,12 +24,12 @@ class Square(Rectangle):
     @property
     def size(self):
         """Get the size of the square"""
-        return self.__width
+        return self.width
 
     @size.setter
     def size(self, value):
-        self.__width = value
-        self.__height = value
+        self.width = value
+        self.height = value
 
     def __str__(self):
         """Return the str() representation of the square"""
@@ -38,7 +38,7 @@ class Square(Rectangle):
                                              self.__width)
 
     def update(self, *args, **kwargs):
-        """Update the rectangle with new attributes
+        """Update the square with new attributes
         Args:
             *args (int)
                - 1st argument should be the id attribute
@@ -55,10 +55,11 @@ class Square(Rectangle):
                     self.id = item
                 elif count == 1:
                     self.__width = item
-                elif count == 2:
                     self.__height = item
-                elif count == 3:
+                elif count == 2:
                     self.__x = item
+                elif count == 3:
+                    self.__y = item
                 count += 1
 
         elif kwargs:
